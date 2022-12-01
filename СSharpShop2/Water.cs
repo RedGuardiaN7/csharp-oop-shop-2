@@ -16,20 +16,21 @@ namespace СSharpShop2
 
         public string Source { get; set; }
 
-        private double MaxCapacity;
+        public double MaxCapacity { get; }
 
-        //------------ COSTRUTTORI ------------ //
+        //------------ COSTRUTTORE ------------ //
 
         public Water(string name,string description, double price, double Litres, double Ph, string Source, double MaxCapacity = 1.5) : base(name, description, price)
         {
             this.Litres = Litres;
             this.Ph = Ph;
             this.Source = Source;
+            this.MaxCapacity = MaxCapacity;
         }
 
         //---------- Definizioni dei metodi ---------- //
 
-        //metodo bevi, che toglie dall’attributo litri una quantità pari a litriDaBere di acqua se presenti
+        //Metodo bevi, che toglie dall’attributo litri una quantità pari a litriDaBere di acqua se presenti
 
         public void Drink(double DrinkLitres)
         {
@@ -45,13 +46,13 @@ namespace СSharpShop2
             }
         }
 
-        //metodo riempi(double litri) che riempie la bottiglia di acqua con tot litri di acqua
+        //Metodo riempi(double litri) che riempie la bottiglia di acqua con tot litri di acqua
 
         public void Fill(double Fill_Litres)
         {
             if ((Fill_Litres + this.Litres) > MaxCapacity)
             {
-                Console.WriteLine("Wow, hai riempito troppo la bottiglia! (Max capacità: 1.5 l");
+                Console.WriteLine("Wow, hai riempito troppo la bottiglia! (Max capacità: 1.5 l)");
             }
             else
             {
@@ -60,7 +61,7 @@ namespace СSharpShop2
             }
         }
 
-        //metodo svuota che rimuove tutta l’acqua dalla bottiglia
+        //Metodo svuota che rimuove tutta l’acqua dalla bottiglia
 
         public void Empty()
         {
@@ -81,7 +82,7 @@ namespace СSharpShop2
             Console.WriteLine();
             Console.WriteLine("Il nome esteso del prodotto è: " + this.ExtendedName());
             Console.WriteLine();
-            Console.WriteLine("Litri presenti nella bottiglia: " + this.Litres);
+            Console.WriteLine("Litri presenti nella bottiglia: " + this.Litres + " l");
             Console.WriteLine();
             Console.WriteLine("PH: " + this.Ph);
             Console.WriteLine();
