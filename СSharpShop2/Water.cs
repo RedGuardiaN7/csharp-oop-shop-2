@@ -10,8 +10,8 @@ namespace СSharpShop2
     {
         //Attributi
 
-        private int _LitresValue;
-        public int Litres
+        private double _LitresValue;
+        public double Litres
         {
             get
             {

@@ -22,7 +22,7 @@ namespace СSharpShop2
             } set 
             {
                 if (value > 5 || value < 0) {
-                    Console.WriteLine("Errore, numero di pezzi di frutta invalido");
+                    Console.WriteLine("Errore, numero di pezzi di frutta invalido");        // Questo viene fatto per mantenere il numero massimo di pezzi
                 } else
                 {
                     _PiecesValue= value;
@@ -37,7 +37,7 @@ namespace СSharpShop2
 
         //------------ COSTRUTTORE ------------ //
 
-        public FruitSnack(string name, string description, double price, int Weigth, int Pieces, bool AddedSugars, bool Compostable, int MaxPieces = 5) : base(name, description, price)
+        public FruitSnack(string name, string description, double price, int Weigth, int Pieces, bool AddedSugars, bool Compostable) : base(name, description, price)
         {
             this.Weight = Weigth;
             this.Pieces = Pieces;
@@ -81,7 +81,7 @@ namespace СSharpShop2
         //Metodo che stampa a video tutte le informazioni del prodotto (override del product.cs)
         public virtual void Print(int num)
         {
-            Console.WriteLine("-------------------- Fuit snack " + num + " ---------------------");
+            Console.WriteLine("-------------------- Fruit snack " + num + " ---------------------");
             Console.WriteLine();
             Console.WriteLine("Nome: " + this.Name);
             Console.WriteLine();

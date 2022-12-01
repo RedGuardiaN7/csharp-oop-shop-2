@@ -8,17 +8,23 @@ using СSharpShop2;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-Water Guizza = new Water("Acqua_Guizza", "Acqua naturale, povera di sodio.",  0.44, 1.5, 7.5, "Scorzè");
+Water Guizza = new Water("Acqua_Guizza", "Acqua naturale, povera di sodio.",  0.24, 1.5, 7.5, "Scorzè");
 
+Guizza.Print(1);
 Guizza.Drink(1);
 Guizza.Fill(1);
 Console.WriteLine();
-Guizza.Print(1);
 
-FruitSnack ZIG = new FruitSnack("ZIG_Crunchy", "Frutta secca di provenienza certificata", 1.99, 30, 7, false, true);
+FruitSnack ZIG = new FruitSnack("ZIG_Crunchy", "Frutta secca di provenienza certificata", 0.59, 30, 5, false, true);
 
+ZIG.Print(1);
 ZIG.EcoFriendly();
 ZIG.Healthy();
 Console.WriteLine();
-ZIG.Print(1);
 
+LEGO Millenium_Falcon = new LEGO("Millenium_Falcon", "L'astronave più famosa della galassia, tutta da costruire!", 693.99, 75192, 7500, 1700, 18, false, false);
+
+Millenium_Falcon.Print(1);
+Millenium_Falcon.BuyBatteries();
+Millenium_Falcon.ChildFriendly();
+Console.WriteLine();
