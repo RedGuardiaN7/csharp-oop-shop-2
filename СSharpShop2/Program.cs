@@ -28,3 +28,7 @@ Millenium_Falcon.Print(1);
 Millenium_Falcon.BuyBatteries();
 Millenium_Falcon.ChildFriendly();
 Console.WriteLine();
+
+Blender Bosch = new Blender("Bosch_MultiTalent", "Il frullatore multi-funzione", 200, 1250, 220, 5.7, 3.9, "Rosso");
+
+Bosch.Print(1);

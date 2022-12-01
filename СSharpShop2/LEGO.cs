@@ -81,7 +81,7 @@ namespace СSharpShop2
             Console.WriteLine();
             Console.WriteLine("Numero modello: " + this.ID);
             Console.WriteLine();
-            Console.WriteLine("Età consigliata:" + this.RecommandedAge);
+            Console.WriteLine("Età consigliata: " + this.RecommandedAge);
             Console.WriteLine();
             Console.WriteLine("Numero pezzi: " + this.Pieces);
             Console.WriteLine();
