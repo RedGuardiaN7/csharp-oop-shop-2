@@ -14,7 +14,22 @@ namespace СSharpShop2
 
         public int Weight { get; set; }
 
-        public int Pieces { get; set; }
+        private int _PiecesValue;
+        public int Pieces {
+            get
+            {
+                return _PiecesValue;
+            } set 
+            {
+                if (value > 5 || value < 0) {
+                    Console.WriteLine("Errore, numero di pezzi di frutta invalido");
+                } else
+                {
+                    _PiecesValue= value;
+                }       
+            }
+        
+        }
 
         public bool AddedSugars { get; set; }
 

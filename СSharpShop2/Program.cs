@@ -15,7 +15,7 @@ Guizza.Fill(1);
 Console.WriteLine();
 Guizza.Print(1);
 
-FruitSnack ZIG = new FruitSnack("ZIG_Crunchy", "Frutta secca di provenienza certificata", 1.99, 30, 5, false, true);
+FruitSnack ZIG = new FruitSnack("ZIG_Crunchy", "Frutta secca di provenienza certificata", 1.99, 30, 7, false, true);
 
 ZIG.EcoFriendly();
 ZIG.Healthy();

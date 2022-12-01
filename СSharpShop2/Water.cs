@@ -10,7 +10,26 @@ namespace СSharpShop2
     {
         //Attributi
 
-        public double Litres { get; set; }
+        private int _LitresValue;
+        public int Litres
+        {
+            get
+            {
+                return _LitresValue;
+            }
+            set
+            {
+                if (value > 1.5 || value < 0)
+                {
+                    Console.WriteLine("Errore, numero invalido di litri");        // Questo viene fatto per mantenere il numero massimo di pezzi
+                }
+                else
+                {
+                    _LitresValue = value;
+                }
+            }
+
+        }
 
         public double Ph { get; }
 
